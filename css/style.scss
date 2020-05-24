@@ -229,6 +229,8 @@ body {
   &__wrap {
     display: flex;
     align-items: flex-end;
+
+    -ms-flex-align: center;
     justify-content: space-between;
   }
   &__toodler {
@@ -301,89 +303,100 @@ body {
 }
 
 /*--------- Toddler style ---------*/
-
 input[type=range] {
   -webkit-appearance: none;
   width: 100%;
-}
-input[type=range]::-webkit-slider-runnable-track {
-  width: 300px;
-  height: 5px;
-  background: #ddd;
-  border: none;
-  border-radius: 3px;
-}
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background: #3399ff;
-  border: 2px solid #336699;
-  margin-top: -8px;
+  background: none;
 }
 input[type=range]:focus {
   outline: none;
 }
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #ccc;
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #cccccc;
+  border-radius: 50px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  height: 16px;
+  width: 16px;
+  border: 2px solid #336699;
+  background: #3399ff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -4px;
+  border-radius: 50%;
 }
 
 input[type=range]::-moz-range-track {
-  width: 300px;
-  height: 1px;
-  background: #ddd;
-  border: none;
-  border-radius: 3px;
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #cccccc;
+  border-radius: 50px;
+  border: 0.2px solid #010101;
 }
 input[type=range]::-moz-range-thumb {
-  border: none;
   height: 16px;
   width: 16px;
+  border: 2px solid #336699;
+  background: #3399ff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -4px;
   border-radius: 50%;
-  background: red;
 }
-
-input[type=range]:-moz-focusring{
-  outline: 1px solid white;
-  outline-offset: -1px;
-}
-
 input[type=range]::-ms-track {
-  width: 300px;
-  height: 1px;
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
   background: transparent;
   border-color: transparent;
-  border-width: 6px 0;
+  border-width: 16px 0;
   color: transparent;
 }
 input[type=range]::-ms-fill-lower {
-  background: #777;
-  border-radius: 10px;
+  background: #cccccc;
+  border-radius: 50px;
 }
 input[type=range]::-ms-fill-upper {
-  background: #ddd;
-  border-radius: 10px;
+  background: #cccccc;
+  border-radius: 50px;
 }
 input[type=range]::-ms-thumb {
-  border: none;
   height: 16px;
   width: 16px;
+  border: 2px solid #336699;
+  background: #3399ff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -4px;
   border-radius: 50%;
-  background: red;
 }
 input[type=range]:focus::-ms-fill-lower {
-  background: #888;
+  background: #cccccc;
 }
 input[type=range]:focus::-ms-fill-upper {
-  background: #ccc;
+  background: #cccccc;
 }
-.red_color{
-  background: red;
-}
-.red_color option{
-  background: red;
-}
+
+
+
+
+
+
+//input[type=range]:focus::-ms-fill-lower {
+//  background: #888;
+//}
+//input[type=range]:focus::-ms-fill-upper {
+//  background: #ccc;
+//}
+
 
 /*--------- file style ---------*/
 

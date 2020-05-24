@@ -1,9 +1,9 @@
-function testMy() {
-    line = document.getElementById("line").value;
-    my = document.getElementById("my");
-    my.innerHTML =line+ "%";
+function fun1() {
+    var rng=document.getElementById('r1'); //rng - это Input
+    var p=document.getElementById('one'); // p - абзац
+    p.innerHTML=rng.value + ' %';
 }
-
+fun1();
 function countFile () {
     let inputs = document.querySelectorAll('.input__file');
     Array.prototype.forEach.call(inputs, function (input) {

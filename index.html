@@ -101,10 +101,11 @@
                             <div class="order-form-box__toodler">
                                 <div class="order-form-box__percent">
                                     <span>Sed ut perspiciatis, unde omnis iste natus</span>
-                                    <div id="my">0 %</div>
+                                    <div id="one">0 %</div>
                                 </div>
-                                <input type="range" min="0" max="100" id="line"
-                                       oninput="testMy()" value="0">
+
+                                <input type="range" id="r1" onmousemove="fun1()" oninput="fun1()">
+
                             </div>
                             <div class="order-form-box__file">
                                 <input name="file" type="file" name="file" id="input__file" class="input input__file" multiple>
@@ -113,12 +114,11 @@
                                         <img class="input__file-icon" src="./images/file-alt.png" alt="Выбрать файл" width="25">
                                         <span class="input__file-button-text">Прикрепить файл</span>
                                     </div>
-
                                 </label>
                             </div>
                         </div>
                         <div class="order-form-box__btn">
-                            <input type="submit" class="order-form-box__btn-style main_btn">
+                            <input type="submit" class="order-form-box__btn-style main_btn" value="Отправить">
                         </div>
 
                     </div>
