@@ -28,9 +28,15 @@ function styleOrderSelect () {
 
     let select = document.querySelector('.js-order-select');
 
-    select.addEventListener('click', function () {
+    function customSelect () {
+        let select_block = document.querySelector('.order-form-box__select-block');
+        select_block.classList.add("select_arrow");
         select.classList.add("select_style");
-    });
+    }
+
+    select.addEventListener('click', customSelect);
+
+    select.addEventListener('mousedown', customSelect);
 
 }
 

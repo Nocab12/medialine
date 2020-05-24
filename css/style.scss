@@ -223,13 +223,45 @@ body {
     align-items: center;
     justify-content: space-between;
   }
+  &__select-block {
+    width: 100%;
+    max-width: 370px;
+    position: relative;
+  }
+  &__select {
+    display: block;
+    width: 100%;
+    -webkit-appearance: none; /* Chrome */
+    -moz-appearance: none; /* Firefox */
+    appearance: none; /* убираем дефолнтные стрелочки */
+  }
+  &__select::-ms-expand {
+    display: none;
+  }
+  &__select-block:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #000000;
+    border-right: 2px solid #000000;
+    top: 20px;
+    right: 24px;
+    z-index: 1;
+    margin-top: -3px;
+    transform: rotate(135deg);
+  }
+  &__select-block.select_arrow:after {
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+  }
   &__input {
     margin-left: 30px;
   }
   &__wrap {
     display: flex;
     align-items: flex-end;
-
     -ms-flex-align: center;
     justify-content: space-between;
   }
@@ -259,6 +291,7 @@ body {
   &__btn-style {
     width: 100%;
     max-width: 370px;
+    padding: 15px 0;
   }
 }
 
@@ -413,11 +446,14 @@ input[type=range]:focus::-ms-fill-upper {
 .input__file-icon-wrapper {
   width: 100%;
 }
-
+.input__file-icon {
+  width: 15px;
+}
 .input__file-button-text {
-  line-height: 1;
   margin-top: 1px;
   padding-left: 10px;
+  text-transform: uppercase;
+  color: #222222;
 }
 
 .input__file-button {
@@ -426,7 +462,7 @@ input[type=range]:focus::-ms-fill-upper {
   justify-content: flex-start;
   width: 100%;
   max-width: 354px;
-  padding: 8px;
+  padding: 15px 8px;
   background: #ffffff;
   color: #222222;
   font-weight: 700;
