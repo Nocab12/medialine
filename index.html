@@ -107,12 +107,20 @@
                                        oninput="testMy()" value="0">
                             </div>
                             <div class="order-form-box__file">
-                                <input type="file" class="order-form-box__file main__field" value="Прикрепите файл">
+                                <input name="file" type="file" name="file" id="input__file" class="input input__file" multiple>
+                                <label for="input__file" class="input__file-button">
+                                    <div class="input__file-icon-wrapper">
+                                        <img class="input__file-icon" src="./images/file-alt.png" alt="Выбрать файл" width="25">
+                                        <span class="input__file-button-text">Прикрепить файл</span>
+                                    </div>
+
+                                </label>
                             </div>
                         </div>
                         <div class="order-form-box__btn">
                             <input type="submit" class="order-form-box__btn-style main_btn">
                         </div>
+
                     </div>
 
                 </form>

@@ -204,7 +204,8 @@ body {
   margin-top: 32px; }
 .order-form-box__file {
   width: 100%;
-  max-width: 370px; }
+  max-width: 370px;
+  text-align: center; }
 .order-form-box__btn {
   margin-top: 50px;
   text-align: center;
@@ -213,12 +214,41 @@ body {
   width: 100%;
   max-width: 370px; }
 
-/*--------- Toddler ---------*/
+/*--------- footer ---------*/
+.footer {
+  background: #393e50;
+  padding: 35px 0;
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 18px; }
+
+.footer-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .footer-wrap__copyright {
+    font-weight: bold; }
+  .footer-wrap__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+  .footer-wrap__item {
+    margin-right: 35px; }
+  .footer-wrap__item:last-child {
+    margin-right: 0; }
+  .footer-wrap__link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #ffffff;
+    font-weight: normal;
+    text-decoration: none; }
+  .footer-wrap__text {
+    margin-left: 10px; }
+
+/*--------- Toddler style ---------*/
 input[type=range] {
-  /*removes default webkit styles*/
   -webkit-appearance: none;
-  /*fix for FF unable to apply focus style bug */
-  /*required for proper track sizing in FF*/
   width: 100%; }
 
 input[type=range]::-webkit-slider-runnable-track {
@@ -257,7 +287,6 @@ input[type=range]::-moz-range-thumb {
   border-radius: 50%;
   background: red; }
 
-/*hide the outline behind the border*/
 input[type=range]:-moz-focusring {
   outline: 1px solid white;
   outline-offset: -1px; }
@@ -265,12 +294,9 @@ input[type=range]:-moz-focusring {
 input[type=range]::-ms-track {
   width: 300px;
   height: 1px;
-  /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
   background: transparent;
-  /*leave room for the larger thumb to overflow with a transparent border */
   border-color: transparent;
   border-width: 6px 0;
-  /*remove default tick marks*/
   color: transparent; }
 
 input[type=range]::-ms-fill-lower {
@@ -300,34 +326,32 @@ input[type=range]:focus::-ms-fill-upper {
 .red_color option {
   background: red; }
 
-/*--------- footer ---------*/
-.footer {
-  background: #393e50;
-  padding: 35px 0;
-  color: #ffffff;
-  font-size: 13px;
-  line-height: 18px; }
+/*--------- file style ---------*/
+.input__wrapper {
+  width: 100%;
+  max-width: 370px;
+  text-align: center; }
 
-.footer-wrap {
+.input__file {
+  display: none; }
+
+.input__file-icon-wrapper {
+  width: 100%; }
+
+.input__file-button-text {
+  line-height: 1;
+  margin-top: 1px;
+  padding-left: 10px; }
+
+.input__file-button {
   display: flex;
   align-items: center;
-  justify-content: space-between; }
-  .footer-wrap__copyright {
-    font-weight: bold; }
-  .footer-wrap__list {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; }
-  .footer-wrap__item {
-    margin-right: 35px; }
-  .footer-wrap__item:last-child {
-    margin-right: 0; }
-  .footer-wrap__link {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    color: #ffffff;
-    font-weight: normal;
-    text-decoration: none; }
-  .footer-wrap__text {
-    margin-left: 10px; }
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 354px;
+  padding: 8px;
+  background: #ffffff;
+  color: #222222;
+  font-weight: 700;
+  border-radius: 3px;
+  cursor: pointer; }
