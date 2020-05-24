@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "Muller";
+    src: url("../fonts/muller/Muller-Thin.otf");
+    src: url("../fonts/muller/Muller-Thin.otf?#iefix")format("embedded-opentype"),
+        /*url('../fonts/muller/Muller-Light.woff2') format('woff2'),*/
+        /*url("../fonts/muller/Muller-Light.woff") format("woff"),*/
+    url("../fonts/muller/Muller-Thin.otf") format("opentype");
+    font-style: normal;
+    font-weight: 100;
+}
+@font-face {
+    font-family: "Muller";
+    src: url("../fonts/muller/Muller-Light.eot");
+    src: url("../fonts/muller/Muller-Light.eot?#iefix")format("embedded-opentype"),
+        /*url('../fonts/muller/Muller-Light.woff2') format('woff2'),*/
+        /*url("../fonts/muller/Muller-Light.woff") format("woff"),*/
+    url("../fonts/muller/Muller-Light.otf") format("opentype");
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Muller";
+    src: url("../fonts/muller/Muller-Medium.otf");
+    src: url("../fonts/muller/Muller-Medium.otf?#iefix")format("embedded-opentype"),
+        /*url('../fonts/muller/Muller-Light.woff2') format('woff2'),*/
+        /*url("../fonts/muller/Muller-Light.woff") format("woff"),*/
+    url("../fonts/muller/Muller-Medium.otf") format("opentype");
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Muller";
+    src: url("../fonts/muller/Muller-Bold.eot");
+    src: url("../fonts/muller/Muller-Bold.eot?#iefix")format("embedded-opentype"),
+        /*url('../fonts/muller/Muller-Light.woff2') format('woff2'),*/
+        /*url("../fonts/muller/Muller-Light.woff") format("woff"),*/
+    url("../fonts/muller/Muller-Bold.otf") format("opentype");
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Muller";
+    src: url("../fonts/muller/Muller-ExtraBold.otf");
+    src: url("../fonts/muller/Muller-ExtraBold.otf?#iefix")format("embedded-opentype"),
+        /*url('../fonts/muller/Muller-Light.woff2') format('woff2'),*/
+        /*url("../fonts/muller/Muller-Light.woff") format("woff"),*/
+    url("../fonts/muller/Muller-ExtraBold.otf") format("opentype");
+    font-style: normal;
+    font-weight: 800;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto/Roboto-Regular.ttf");
+    src: url("../fonts/roboto/Roboto-Regular.ttf?#iefix")format("embedded-opentype"),
+    url('../fonts/roboto/Roboto-Regular.ttf') format('woff2'),
+    url("../fonts/roboto/Roboto-Regular.ttf") format("woff"),
+    url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto/Roboto-Black.ttf");
+    src: url("../fonts/roboto/Roboto-Black.ttf?#iefix")format("embedded-opentype"),
+    url('../fonts/roboto/Roboto-Black.ttf') format('woff2'),
+    url("../fonts/roboto/Roboto-Black.ttf") format("woff"),
+    url("../fonts/roboto/Roboto-Black.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+<!-- -->
+
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: bold;
+    src: local("Lato"),
+    /*url("../fonts/lato/Lato-Black.ttf") format('woff2'),*/
+    /*url("../fonts/lato/Lato-Black.ttf") format("woff"),*/
+    url("../fonts/lato/Lato-Black.eot") format("embedded-opentype"),
+    url("../fonts/lato/Lato-Black.ttf") format("truetype");
+
+}
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Lato"),
+        /*url("../fonts/lato/Lato-Black.ttf") format('woff2'),*/
+        /*url("../fonts/lato/Lato-Black.ttf") format("woff"),*/
+    url("../fonts/lato/Lato-Regular.eot") format("embedded-opentype"),
+    url("../fonts/lato/Lato-Regular.ttf") format("truetype");
+
+}
